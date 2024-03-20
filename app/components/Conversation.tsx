@@ -13,7 +13,7 @@ import { ChatBubble } from "./ChatBubble";
 import { Controls } from "./Controls";
 import { InitialLoad } from "./InitialLoad";
 import { RightBubble } from "./RightBubble";
-import { systemContent } from "../lib/constants";
+import { JADE_CONFIG, systemContent } from "../lib/constants";
 import { Message, useChat } from "ai/react";
 import { useQueue } from "@uidotdev/usehooks";
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
@@ -126,8 +126,8 @@ export default function Conversation(): JSX.Element {
       ({
         id: "welcome",
         role: "assistant",
-        content: contextualGreeting(),
-      } as Message),
+        content: "tring, tring..... \n\ntring, tring.....",
+      }) as Message,
     []
   );
 
@@ -147,7 +147,7 @@ export default function Conversation(): JSX.Element {
     initialMessages: [
       {
         role: "system",
-        content: systemContent,
+        content: JADE_CONFIG,
       } as Message,
       greeting,
     ],

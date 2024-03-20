@@ -146,7 +146,7 @@ const DeepgramContextProvider = ({ children }: DeepgramContextInterface) => {
         await getApiKey(),
         {},
         {
-          model: "nova-2",
+          model: "phonecall",
           interim_results: true,
           smart_format: true,
           endpointing: 350,
@@ -175,7 +175,7 @@ const DeepgramContextProvider = ({ children }: DeepgramContextInterface) => {
 
     if (!sttOptions === undefined) {
       setSttOptions({
-        model: "nova-2",
+        model: "phonecall",
         interim_results: true,
         smart_format: true,
         endpointing: 350,

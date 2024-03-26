@@ -45,7 +45,7 @@ const voices: {
   };
 } = {
   "aura-asteria-en": {
-    name: "Asteria",
+    name: "Jade",
     avatar: "/aura-asteria-en.svg",
     language: "English",
     accent: "US",

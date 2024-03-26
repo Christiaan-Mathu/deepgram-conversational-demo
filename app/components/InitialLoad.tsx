@@ -1,7 +1,5 @@
-import { ExclamationIcon } from "./icons/ExclamationIcon";
 import { Headphones } from "./Headphones";
-import { isBrowser, isIOS } from "react-device-detect";
-import Image from "next/image";
+import { isBrowser } from "react-device-detect";
 
 export const InitialLoad = ({ fn }: { fn: () => void }) => {
   return (
@@ -10,20 +8,13 @@ export const InitialLoad = ({ fn }: { fn: () => void }) => {
         <button
           onClick={() => fn()}
           type="button"
-          className="relative block w-full glass p-6 sm:p-8 lg:p-12 rounded-xl"
+          className="relative block w-full p-6 sm:p-8 lg:p-12 rounded-xl"
         >
           <h2 className="font-favorit mt-2 block font-bold text-xl text-gray-100">
-            Welcome to Deepgram&apos;s
+            Welcome to Jade
             <br />
             AI Agent Tech Demo.
           </h2>
-          <div className="flex justify-center mt-4">
-            <ul className="list-disc list-inside marker:text-[#13EF93]">
-              <li className="text-center">Nova-2 Speech-to-Text</li>
-              <li className="text-center">OpenAI GPT-3.5 Turbo</li>
-              <li className="text-center">Aura Text-to-Speech</li>
-            </ul>
-          </div>
           <span className="mt-4 block font-semibold">
             <div className="bg-white text-black rounded px-10 py-3 font-semibold sm:w-fit sm:mx-auto">
               {isBrowser ? "Click" : "Tap"} here to start
@@ -32,7 +23,7 @@ export const InitialLoad = ({ fn }: { fn: () => void }) => {
           <span className="mt-4 block text-sm text-gray-100/70">
             <Headphones /> For optimal enjoyment, we recommend using headphones
             while using this application. Minor bugs and annoyances may appear
-            while using this demo. Pull requests are welcome.
+            while using this demo.
           </span>
         </button>
       </div>

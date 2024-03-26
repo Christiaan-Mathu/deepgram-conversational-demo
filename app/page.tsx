@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-full overflow-hidden">
+      <div className="h-full overflow-hidden bg-black bg-opacity-80">
         <main className="mx-auto max-w-7xl  px-4 md:px-6 lg:px-8 h-full">
           <Conversation />
         </main>
